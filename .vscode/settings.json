@@ -1,0 +1,10 @@
+{
+    "editor.quickSuggestions": {
+        "strings": "on"
+    },
+    "prettier.documentSelectors": ["**/*.astro"],
+    "[astro]": {
+        "editor.defaultFormatter": "astro-build.astro-vscode"
+    },
+    "prettier.bracketSameLine": true
+}
