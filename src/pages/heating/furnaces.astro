@@ -1,0 +1,82 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Hero from "../../components/dynamic/Hero.astro";
+import SectionContentImage from "../../components/dynamic/SectionContentImage.astro";
+import SectionContentList from "../../components/dynamic/SectionContentList.astro";
+import SectionContentGuarantee from "../../components/static/SectionContentGuarantee.astro";
+import SectionContentReviews from "../../components/static/SectionContentReviews.astro";
+import SectionContentArea from "../../components/static/SectionContentArea.astro";
+---
+
+<Layout title="Furnaces | Elite Heating and Cooling">
+  <div>
+    <Hero
+      header={{
+        title: "Furnace Installation and Replacement in Suffolk County",
+        subtitle: "Elite",
+        content:
+          "Older furnaces can be less efficient and lead to higher energy bills. By investing in a new, high-efficiency furnace, you can save money on your monthly heating costs and reduce your carbon footprint.",
+      }}
+      image={{
+        src: "/src/assets/img/hero-furnace.jpg",
+        alt: "Furnace Installation",
+      }}
+      primaryCta={{ href: "/contact/", text: "Get a Free Estimate" }}
+      secondaryCta={{ href: "tel:(631) 402-5161", text: "(631) 402-5161" }}
+    />
+    <SectionContentImage
+      header={{
+        title: "Maximize Energy Efficiency with a New Furnace from Elite Heating and Cooling ",
+        subtitle: "",
+        content:
+          "When selecting a new furnace, it's crucial to take into account your budget, the appropriate size for your home's heating needs, and the model's energy efficiency level. If you're unsure about the which heating system is right for your home, consider consulting with our Elite furnace installation experts in Suffolk and Nassau County.",
+      }}
+      image={{
+        src: "/src/assets/img/furnace-unit.jpg",
+        alt: "Furnace Unit",
+      }}
+      primaryCta={{ href: "/contact/", text: "Get a Free Estimate" }}
+      secondaryCta={{ href: "tel:(631) 402-5161", text: "(631) 402-5161" }}
+      review={{
+        name: "Leo A.",
+        city: "Bethpage, NY",
+        content:
+          "Definitely recommend them for any HVAC work. The team installed three wall units and a condenser at my place. Really impressed with the quality of the work and price. They were responsive and paid attention to every detail.",
+      }}
+    />
+    <SectionContentList
+      header={{
+        title: "Is It Time to Upgrade Your Furnace?",
+        content:
+          "Your boiler requires consistent maintenance to operate smoothly. Here are some indicators that it's time for repairs or possibly a new replacement:",
+        topic: "modern, high-efficiency boiler",
+      }}
+      primaryCta={{ href: "/contact/", text: "Contact us" }}
+      secondaryCta={{ href: "tel:(631) 402-5161", text: "(631) 402-5161" }}
+      list={[
+        {
+          title: "Lifespan",
+          content:
+            "Most furnaces have a functional lifespan of 10-20 years. Approaching or surpassing this timeline suggests it's time to consider an upgrade for improved efficiency and reliability.",
+        },
+        {
+          title: "Rising Heating Costs",
+          content:
+            "Noticeable increases in your heating bills can indicate that your furnace's efficiency is declining. Upgrading to a newer model can enhance energy efficiency and lower monthly expenses.",
+        },
+        {
+          title: "Recurring Malfunctions",
+          content:
+            "Frequent breakdowns, rattling noises, and other issues not only disrupt your comfort but also hint that your furnace might be beyond economical repair. A new, more reliable unit could save you from recurring stress and expenses.",
+        },
+        {
+          title: "Reduced Home Comfort",
+          content:
+            "A decline in indoor air quality, uneven heating, or a noticeable increase in dust and soot are signs your furnace may not be operating effectively. A modern furnace can provide reliable heating and improve air quality in your home.",
+        },
+      ]} />
+    <SectionContentGuarantee />
+    <SectionContentReviews />
+    <SectionContentArea />
+  </div>
+</Layout>

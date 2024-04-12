@@ -1,0 +1,87 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Hero from "../../components/dynamic/Hero.astro";
+import SectionContentImage from "../../components/dynamic/SectionContentImage.astro";
+import SectionContentList from "../../components/dynamic/SectionContentList.astro";
+import SectionContentGuarantee from "../../components/static/SectionContentGuarantee.astro";
+import SectionContentReviews from "../../components/static/SectionContentReviews.astro";
+import SectionContentArea from "../../components/static/SectionContentArea.astro";
+---
+
+<Layout title="Heat Pumps | Elite Heating and Cooling">
+  <div>
+    <Hero
+      header={{
+        title: "Heat Pump Installation Services in Suffolk County",
+        subtitle: "Elite",
+        content:
+          "Looking to upgrade your HVAC system? Consider a heat pump. Heat pumps handle both the heating and cooling of your home without the higher energy demands of a furnace or central air conditioner.",
+      }}
+      image={{
+        src: "/src/assets/img/hero-heat-pump.jpg",
+        alt: "Heat Pump Installation",
+      }}
+      primaryCta={{ href: "/contact/", text: "Get a Free Estimate" }}
+      secondaryCta={{ href: "tel:(631) 402-5161", text: "(631) 402-5161" }}
+    />
+    <SectionContentImage
+      header={{
+        title: "All-in-One Climate Control with Heat Pumps",
+        subtitle: "",
+        content:
+          "Heat pumps are a perfect fit for Long Island homes, offering a range of benefits to suit our varied weather conditions. A heat pump can ensure your home remains comfortable in every season. Looking for an economical way to heat and cool your home? Our Elite team is here to guide you.",
+      }}
+      image={{
+        src: "/src/assets/img/heat-pump-unit.jpg",
+        alt: "Heat Pump Unit",
+      }}
+      primaryCta={{ href: "/contact/", text: "Get a Free Estimate" }}
+      secondaryCta={{ href: "tel:(631) 402-5161", text: "(631) 402-5161" }}
+      review={{
+        name: "Leo A.",
+        city: "Bethpage, NY",
+        content:
+          "Definitely recommend them for any HVAC work. The team installed three wall units and a condenser at my place. Really impressed with the quality of the work and price. They were responsive and paid attention to every detail.",
+      }}
+    />
+    <SectionContentList
+      header={{
+        title: "Why Go for a Heat Pump?",
+        content:
+          "Heat pumps offer an innovative and efficient way to heat and cool your home, using electricity instead of natural gas or oil. They extract low-temperature heat from the environment to warm your home in the cold months and reverse this process to cool it during the warmer months, ensuring year-round comfort with less energy use.",
+        topic: "heat pump",
+      }}
+      primaryCta={{ href: "/contact/", text: "Contact us" }}
+      secondaryCta={{ href: "tel:(631) 402-5161", text: "(631) 402-5161" }}
+      list={[
+        {
+          title: "Energy Savings",
+          content:
+            "Heat pumps excel in efficiency by transferring heat between inside and outside your home, rather than generating heat directly. This process results in similar heating or cooling effectiveness but with lower energy use and utility costs.",
+        },
+        {
+          title: "Flexibility",
+          content:
+            "Heat pumps provide the option to either keep a consistent temperature throughout your home or adjust settings for different temperatures in separate rooms, catering to personal preferences.",
+        },
+        {
+          title: "Longevity",
+          content:
+            "Heat pumps have simpler mechanics compared to conventional heating systems, leading to fewer breakdowns. Designed for year-round use, they offer resilience against severe weather and temperature fluctuations.",
+        },
+        {
+          title: "Eco-Friendliness",
+          content:
+            "Heat pumps produce much lower greenhouse gas emissions than traditional heating and cooling methods, making them a more environmentally friendly choice",
+        },
+        {
+          title: "Safety Features",
+          content:
+            "Heat pumps operate without combustion, removing the risk of carbon monoxide poisoning and reducing safety hazards associated with traditional heating methods.",
+        },
+      ]} />
+    <SectionContentGuarantee />
+    <SectionContentReviews />
+    <SectionContentArea />
+  </div>
+</Layout>

@@ -1,0 +1,51 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Hero from "../../components/dynamic/Hero.astro";
+import SectionContentImage from "../../components/dynamic/SectionContentImage.astro";
+import SectionContentList from "../../components/dynamic/SectionContentList.astro";
+import SectionContentGuarantee from "../../components/static/SectionContentGuarantee.astro";
+import SectionContentReviews from "../../components/static/SectionContentReviews.astro";
+import SectionContentArea from "../../components/static/SectionContentArea.astro";
+---
+
+<Layout title="Central Air Conditioning | Elite Heating and Cooling">
+  <div>
+    <Hero
+      header={{
+        title: "Central Air Conditioning Installation on Long Island",
+        subtitle: "Elite",
+        content:
+          "Long AC system life span, improved cooling, and energy efficiency for your home.",
+      }}
+      image={{
+        src: "/src/assets/img/hero-central-air-conditioning.jpg",
+        alt: "Central Air Conditioning",
+      }}
+      primaryCta={{ href: "/contact/", text: "Get a Free Estimate" }}
+      secondaryCta={{ href: "tel:(631) 402-5161", text: "(631) 402-5161" }}
+    />
+    <SectionContentImage
+      header={{
+        title: "Upgrade Your Home's Central AC System",
+        subtitle: "",
+        content:
+          "At Elite Heating and Cooling, we take pride in maximizing your comfort with a range of central air conditioning systems. Our team of HVAC experts will work closely with you to create a solution that fits your budget, energy efficiency needs, and improve air quality. With Elite, expect nothing less than meticulous installation, backed by a commitment to excellence and your satisfaction.",
+      }}
+      image={{
+        src: "/src/assets/img/central-air-conditioning-unit.jpg",
+        alt: "Central Air Conditioner Unit",
+      }}
+      primaryCta={{ href: "/contact/", text: "Get a Free Estimate" }}
+      secondaryCta={{ href: "tel:(631) 402-5161", text: "(631) 402-5161" }}
+      review={{
+        name: "Mila S.",
+        city: "Islip, NY",
+        content:
+          "I had the team install a mini split system. They were informative and honest about all the brands and options that would fit my budget... Highly recommend elite heating and cooling for their               expertise.",
+      }}
+    />
+    <SectionContentGuarantee />
+    <SectionContentReviews />
+    <SectionContentArea />
+  </div>
+</Layout>

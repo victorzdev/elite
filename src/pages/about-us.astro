@@ -1,0 +1,57 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Hero from "../components/dynamic/Hero.astro";
+import SectionContentList from "../components/dynamic/SectionContentList.astro";
+import SectionContentArea from "../components/static/SectionContentArea.astro";
+---
+
+<Layout title="About Us | Elite Heating and Cooling">
+  <div>
+    <Hero
+      header={{
+        title: "Elite Heating and Cooling",
+        subtitle: "About",
+        content:
+          "Family values mean dependable service. Trust our locally-owned company for personalized HVAC solutions that last, all without the big-company price tag.",
+      }}
+      image={{
+        src: "/src/assets/img/hero-about-us.jpg",
+        alt: "About Us",
+      }}
+      primaryCta={{ href: "/contact/", text: "Book a Consultation" }}
+      secondaryCta={{ href: "tel:(631) 402-5161", text: "(631) 402-5161" }}
+    />
+    <SectionContentList
+      header={{
+        title: "Our Values",
+        content:
+        "With years of experience, our team ensures your home remains comfortable all year long with our reliable HVAC solutions.",
+        topic: "free HVAC consultation",
+      }}
+      primaryCta={{ href: "/contact/", text: "Contact us" }}
+      secondaryCta={{ href: "tel:(631) 402-5161", text: "(631) 402-5161" }}
+      list={[
+        {
+          title: "Personalized Service",
+          content:
+            "Your comfort isn't one-Ssize-fits-all which is We take the time to understand your specific requirements. Whether it's finding the perfect HVAC system or maintenance plan, we go the extra mile for the comfort that's right for you. Just like a good neighbor would.",
+        },
+        {
+          title: "Expertise You Can Count On",
+          content:
+            "Get the HVAC system you need, installed the right way. Our trained technicians specialize in ductless mini-splits, heat pumps, and more, delivering reliable service and peace of mind to you.",
+        },
+        {
+          title: "Always Do The Right Thing",
+          content:
+            "We believe in building honest, long-term relationships with our customers. We work with you, not just for you.  Count on clear communication and a commitment to transparent pricing and fair service.",
+        },
+        {
+          title: "Positive Attitude",
+          content:
+            "Our 'Get It Done' attitude means we're dedicated to resolving your HVAC issues efficiently and effectively. We bring a results-driven approach, so you can relax knowing your comfort is in good hands.",
+        },
+      ]} />
+      <SectionContentArea />
+  </div>
+</Layout>

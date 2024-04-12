@@ -1,0 +1,87 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Hero from "../../components/dynamic/Hero.astro";
+import SectionContentImage from "../../components/dynamic/SectionContentImage.astro";
+import SectionContentList from "../../components/dynamic/SectionContentList.astro";
+import SectionContentGuarantee from "../../components/static/SectionContentGuarantee.astro";
+import SectionContentReviews from "../../components/static/SectionContentReviews.astro";
+import SectionContentArea from "../../components/static/SectionContentArea.astro";
+---
+
+<Layout title="Ductless Mini Splits | Elite Heating and Cooling">
+  <div>
+    <Hero
+      header={{
+        title: "Ductless Mini-Split Installation on Long Island",
+        subtitle: "Elite",
+        content:
+          "Need a ductless mini-split system? Our team specializes in customizing each system to fit exactly what your home needs.",
+      }}
+      image={{
+        src: "/src/assets/img/hero-ductless-mini-split.jpg",
+        alt: "Ductless Mini-Split Installation",
+      }}
+      primaryCta={{ href: "/contact/", text: "Get a Free Estimate" }}
+      secondaryCta={{ href: "tel:(631) 402-5161", text: "(631) 402-5161" }}
+    />
+    <SectionContentImage
+      header={{
+        title: "Upgrade Your Home's Comfort with a Ductless Mini-Split System",
+        subtitle: "",
+        content:
+          "Looking for an efficient way to keep your home comfortable? If you have rooms without ductwork,  inconsistent temperatures, or you're expanding your living area, consider a ductless heating and cooling system as an ideal solution.",
+      }}
+      image={{
+        src: "/src/assets/img/ductless-mini-split-unit.jpg",
+        alt: "Ductless Mini-Split Unit",
+      }}
+      primaryCta={{ href: "/contact/", text: "Get a Free Estimate" }}
+      secondaryCta={{ href: "tel:(631) 402-5161", text: "(631) 402-5161" }}
+      review={{
+        name: "Mila S.",
+        city: "Islip, NY",
+        content:
+          "I had the team install a mini split system. They were informative and honest about all the brands and options that would fit my budget... Highly recommend elite heating and cooling for their               expertise.",
+      }}
+    />
+    <SectionContentList
+      header={{
+        title: "Benefits of Choosing Ductless Heating & Cooling Systems",
+        content:
+          "Opting for a ductless mini-split system brings several benefits, including higher energy efficiency, room-by-room comfort adjustments, minimal upkeep, and more.",
+        topic: "ductless mini-split system",
+      }}
+      primaryCta={{ href: "/contact/", text: "Contact us" }}
+      secondaryCta={{ href: "tel:(631) 402-5161", text: "(631) 402-5161" }}
+      list={[
+        {
+          title: "Easy Install and Maintenance",
+          content:
+            "Ditch the complexity of traditional systems. Mini-split systems offer a smooth installation process, eliminating the need for disruptive ductwork. They're designed for easy maintenance, freeing you from time-consuming upkeep.",
+        },
+        {
+          title: "Room-by-Room Comfort Control",
+          content:
+            "Flexibility with the ability to heat or cool particular rooms or areas in your home. This targeted approach not only guarantees comfort right where it's needed but also promotes more efficient energy use.",
+        },
+        {
+          title: "Optimal Air Quality",
+          content:
+            "Our ductless systems come equipped with advanced filtration technology, dramatically cutting down on dust, allergens, and other pollutants inside your home. With easily replaceable filters you can maintain superior air quality effortlessly.",
+        },
+        {
+          title: "Maximizing Energy Savings",
+          content:
+            "Ductless systems improve your home's heating and cooling efficiency by reducing the energy loss common in traditional systems with duct leaks. This efficiency can lead to potential energy savings of up to 30%.",
+        },
+        {
+          title: "Extensions, Garages, and Additions",
+          content:
+            "For extra bedrooms or garage conversions, where ductwork extension is impractical, ductless mini-splits provide an effective method to ensure these new spaces remain cozy without overloading your primary HVAC system.",
+        },
+      ]} />
+    <SectionContentGuarantee />
+    <SectionContentReviews />
+    <SectionContentArea />
+  </div>
+</Layout>

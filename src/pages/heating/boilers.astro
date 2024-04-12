@@ -1,0 +1,87 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Hero from "../../components/dynamic/Hero.astro";
+import SectionContentImage from "../../components/dynamic/SectionContentImage.astro";
+import SectionContentList from "../../components/dynamic/SectionContentList.astro";
+import SectionContentGuarantee from "../../components/static/SectionContentGuarantee.astro";
+import SectionContentReviews from "../../components/static/SectionContentReviews.astro";
+import SectionContentArea from "../../components/static/SectionContentArea.astro";
+---
+
+<Layout title="Boilers | Elite Heating and Cooling">
+  <div>
+    <Hero
+      header={{
+        title: "Boiler Installation on Long Island",
+        subtitle: "Elite",
+        content:
+          "Our professional HVAC technicians specialize in installing boilers that are just right for your home, ensuring you stay warm against the winter chill.",
+      }}
+      image={{
+        src: "/src/assets/img/hero-boiler.jpg",
+        alt: "Boiler Installation",
+      }}
+      primaryCta={{ href: "/contact/", text: "Get a Free Estimate" }}
+      secondaryCta={{ href: "tel:(631) 402-5161", text: "(631) 402-5161" }}
+    />
+    <SectionContentImage
+      header={{
+        title: "Advantage of installing a Boiler from Elite Heating and Cooling ",
+        subtitle: "",
+        content:
+          "A boiler is an energy-efficient and powerful solution to heating your home. When it's time for a new boiler installation, it's crucial to choose a trusted company to guide you. Our Elite team stands ready to provide the reliable service and expertise you need.",
+      }}
+      image={{
+        src: "/src/assets/img/boiler-unit.jpg",
+        alt: "Boiler Unit",
+      }}
+      primaryCta={{ href: "/contact/", text: "Get a Free Estimate" }}
+      secondaryCta={{ href: "tel:(631) 402-5161", text: "(631) 402-5161" }}
+      review={{
+        name: "Leo A.",
+        city: "Bethpage, NY",
+        content:
+          "Definitely recommend them for any HVAC work. The team installed three wall units and a condenser at my place. Really impressed with the quality of the work and price. They were responsive and paid attention to every detail.",
+      }}
+    />
+    <SectionContentList
+      header={{
+        title: "Signs Your Boiler May Require Repairs or Replacement",
+        content:
+          "Your boiler requires consistent maintenance to operate smoothly. Here are some indicators that it's time for repairs or possibly a new replacement:",
+        topic: "modern, high-efficiency boiler",
+      }}
+      primaryCta={{ href: "/contact/", text: "Contact us" }}
+      secondaryCta={{ href: "tel:(631) 402-5161", text: "(631) 402-5161" }}
+      list={[
+        {
+          title: "Lifespan",
+          content:
+            "Boilers can reliably heat your home for over 15 years, and with careful maintenance, certain units may last up to 50 years. However, despite regular care, they can still experience potential breakdowns.",
+        },
+        {
+          title: "Rising Energy Bills",
+          content:
+            "Keep an eye on any sudden increases in your energy bills. If your boiler frequently requires repairs, it's a sign that its efficiency has decreased. An inefficient boiler has to work overtime to warm your home, resulting in elevated energy use.",
+        },
+        {
+          title: "Leaks",
+          content:
+            "A leaking boiler, or one that needs constant top-ups of water, might be signaling it's on its last legs. Replacing it not only prevents the risk of expensive flooding but also averts potential severe damage to the boiler system or property.",
+        },
+        {
+          title: "Discoloration",
+          content:
+            "Yellow flames in gas burners or black soot on oil boilers suggest incomplete fuel combustion, producing dangerous carbon monoxide. It's essential to install a carbon monoxide detector in your home for safety.",
+        },
+        {
+          title: "Frequent Maintenance",
+          content:
+            "If your boiler regularly requires repairs for issues such as no heat, banging or whistling sounds, cycling problems, and others, it's a clear indicator that a replacement may be in order.",
+        },
+      ]} />
+    <SectionContentGuarantee />
+    <SectionContentReviews />
+    <SectionContentArea />
+  </div>
+</Layout>
