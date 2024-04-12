@@ -1,2 +1,4 @@
-https://:project.pages.dev/*
+https://elite-eto.pages.dev/*
+  Link: <https://elitehvacli.com/:splat>; rel="canonical"
   X-Robots-Tag: noindex
+  Refresh: 5; url=https://elitehvacli.com/:splat
