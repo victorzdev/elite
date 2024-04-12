@@ -1,22 +1,31 @@
 ---
-interface Props {
-	title: string;
-}
+import Favicons from '../components/static/Favicons.astro';
+import Meta from '../components/static/Meta.astro';
+import Metadata from '../components/static/Metadata.astro';
+import Analytics from '../components/static/Analytics.astro';
+  
 
-const { title } = Astro.props;
+import Header from '../components/static/Header.astro';
+import Footer from '../components/static/Footer.astro';
+
+const { metadata = {} } = Astro.props;
+
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Elite Heating and Cooling" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body>
+  <head>
+    <Favicons />
+	<Meta />
+	<Metadata {...metadata} />
+    <Analytics />
+  </head>
+
+  <body class="antialiased text-default bg-page tracking-tight">
+	<Header />
+	<main>
 		<slot />
-	</body>
+	</main>
+	<Footer />
+  </body>
 </html>
