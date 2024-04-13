@@ -1,13 +1,16 @@
 ---
 import HeaderNav from "./HeaderNav.astro";
+import HeaderNavMobile from "./HeaderNavMobile.astro";
 ---
 
 <header class="relative">
+  <HeaderNavMobile />
   <HeaderNav>
     <slot />
   </HeaderNav>
+
   <script>
-    import { handleDesktopNav, handleMobileNav } from '../../scripts/nav.js';
+    import { handleDesktopNav, handleMobileNav } from "../../scripts/navigationHandler";
     handleDesktopNav();
     handleMobileNav();
   </script>

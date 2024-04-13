@@ -1,0 +1,131 @@
+---
+import Logo from "./Logo.astro";
+
+const imageLinks = [
+  {
+    text: "Ductless Mini-Splits",
+    url: "/air-conditioning/ductless-mini-splits/",
+    imageSrc: "/src/assets/img/nav-01.jpg",
+    imageAlt: "Ductless Mini-Splits",
+  },
+  {
+    text: "Central AC",
+    url: "/air-conditioning/central-air-conditioners/",
+    imageSrc: "/src/assets/img/nav-05.jpg",
+    imageAlt: "Central AC",
+  },
+  {
+    text: "Furnaces",
+    url: "/heating/furnaces/",
+    imageSrc: "/src/assets/img/nav-03.jpg",
+    imageAlt: "Furnaces",
+  },
+  {
+    text: "Boilers",
+    url: "/heating/boilers/",
+    imageSrc: "/src/assets/img/nav-04.jpg",
+    imageAlt: "Boilers",
+  },
+  {
+    text: "Heat Pumps",
+    url: "/heating/heat-pumps/",
+    imageSrc: "/src/assets/img/nav-02.jpg",
+    imageAlt: "Heat Pumps",
+  },
+  {
+    text: "Water Heaters",
+    url: "/heating/water-heaters/",
+    imageSrc: "/src/assets/img/nav-06.jpg",
+    imageAlt: "Water Heaters",
+  },
+];
+---
+
+<div
+  class="off-canvas-menu lg:hidden fixed hidden inset-0 z-40 bg-gray-800 bg-opacity-75 transition-opacity overflow-y-auto">
+  <div class="off-canvas-content relative w-4/5 bg-white p-4 shadow-xl">
+    <button
+      type="button"
+      class="off-canvas-close-button absolute top-4 right-4 translate-x-16">
+      <span class="sr-only">Close menu</span>
+      <svg
+        class="h-8 w-8 text-white"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="2"
+        stroke="currentColor"
+        aria-hidden="true">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M6 18L18 6M6 6l12 12"></path>
+      </svg>
+    </button>
+
+    
+    <div>
+      <div class="lg:hidden">
+        <Logo />
+      </div>
+      <div>
+        <a
+          href="/contact/"
+          class="inline-flex rounded-md bg-orange-500 px-2 py-2 text-sm font-bold text-white shadow-sm hover:bg-orange-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+          >Get a Free Estimate</a
+        >
+      </div>
+      <div
+        id="tabs-1-panel-1"
+        class="space-y-12 px-4 py-6"
+        aria-labelledby="tabs-1-tab-1"
+        role="tabpanel"
+        tabindex="0">
+        <div class="grid grid-cols-2 gap-x-4 gap-y-10">
+          {
+            imageLinks.map((item) => (
+              <div class="group relative">
+                <a href={item.url}>
+                  <div class="aspect-h-1 aspect-w-1 overflow-hidden rounded-md bg-gray-100 group-hover:opacity-75">
+                    <img
+                      src={item.imageSrc}
+                      alt={item.imageAlt}
+                      class="object-cover object-center"
+                    />
+                  </div>
+                </a>
+                <a
+                  href={item.url}
+                  class="mt-6 block text-sm text-center font-bold text-gray-900">
+                  {item.text}
+                </a>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+    </div>
+    <div class="space-y-6 border-t border-gray-200 px-4 py-6">
+      <div class="flow-root">
+        <a
+          href="/customer-reviews/"
+          class="-m-2 block p-2 text-sm font-bold text-gray-900">Customer Reviews</a
+        >
+      </div>
+      <div class="flow-root">
+        <a href="/service-area/" class="-m-2 block p-2 text-sm font-bold text-gray-900"
+          >Service Area</a
+        >
+      </div>
+    </div>
+    <div class="space-y-6 border-t border-gray-200 px-4 py-6">
+      <div class="flow-root">
+        <a href="/about/" class="-m-2 block p-2 text-sm font-bold text-gray-900"
+          >About Us</a
+        >
+      </div>
+      <div class="flow-root">
+        <a href="/blog/" class="-m-2 block p-2 text-sm font-bold text-gray-900">Blog</a>
+      </div>
+    </div>
+  </div>
+</div>
