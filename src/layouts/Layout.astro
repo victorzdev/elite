@@ -3,10 +3,12 @@ import Favicons from '../components/static/Favicons.astro';
 import Meta from '../components/static/Meta.astro';
 import Metadata from '../components/static/Metadata.astro';
 import Analytics from '../components/static/Analytics.astro';
-  
+import Schema from '../components/static/Schema.astro';  
 
 import Header from '../components/static/Header.astro';
 import Footer from '../components/static/Footer.astro';
+
+const isHomepage = Astro.url.pathname === '/'; 
 
 const { metadata = {} } = Astro.props;
 
@@ -19,6 +21,9 @@ const { metadata = {} } = Astro.props;
 	<Meta />
 	<Metadata {...metadata} />
     <Analytics />
+	{isHomepage && (
+		<Schema />
+	  )}
   </head>
 
   <body class="antialiased text-default bg-page tracking-tight">
