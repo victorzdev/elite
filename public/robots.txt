@@ -1,2 +1,5 @@
 User-agent: *
-Disallow:
+Disallow: /~partytown/
+
+
+Sitemap: https://elitehvacli.com/sitemap-0.xml
