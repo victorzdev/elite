@@ -1,26 +1,71 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Contact Us | Elite Heating and Cooling">
-    <div class="px-6 py-12">
-        <svg class="absolute inset-0 -z-10 h-full w-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" aria-hidden="true">
-          <defs>
-            <pattern id="83fd4e5a-9d52-42fc-97b6-718e5d7ee527" width="200" height="200" x="50%" y="-64" patternUnits="userSpaceOnUse">
-              <path d="M100 200V.5M.5 .5H200" fill="none" />
-            </pattern>
-          </defs>
-          <svg x="50%" y="-64" class="overflow-visible fill-gray-50">
-            <path d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M299.5 800h201v201h-201Z" stroke-width="0" />
-          </svg>
-          <rect width="100%" height="100%" stroke-width="0" fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)" />
-        </svg>
-        <div class="mx-auto max-w-xl lg:max-w-4xl">
-          <h2 class="text-3xl font-bold tracking-tight text-gray-900">Let's talk about your project</h2>
-          <p class="mt-2 text-lg leading-8 text-gray-600">Expert heating and cooling solutions to homeowners across Long Island.</p>
-          <div class="mt-8">
-            <iframe data-tally-src="https://tally.so/embed/wAd9rN?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="300" frameborder="0" marginheight="0" marginwidth="0" title="Book Now"></iframe><script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
-          </div>
-        </div>
+<Layout
+  title="Get an HVAC Quote | Elite Heating and Cooling"
+  description="From installations to routine maintenance, Elite Heating and Cooling is ready to help. Upfront pricing and quality workmanship. Contact us today for a free estimate!">
+  <div class="px-6 py-12">
+    <svg
+      class="absolute inset-0 -z-10 h-full w-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
+      aria-hidden="true">
+      <defs>
+        <pattern
+          id="83fd4e5a-9d52-42fc-97b6-718e5d7ee527"
+          width="200"
+          height="200"
+          x="50%"
+          y="-64"
+          patternUnits="userSpaceOnUse">
+          <path d="M100 200V.5M.5 .5H200" fill="none"></path>
+        </pattern>
+      </defs>
+      <svg x="50%" y="-64" class="overflow-visible fill-gray-50">
+        <path
+          d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M299.5 800h201v201h-201Z"
+          stroke-width="0"></path>
+      </svg>
+      <rect
+        width="100%"
+        height="100%"
+        stroke-width="0"
+        fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)"></rect>
+    </svg>
+    <div class="mx-auto max-w-xl lg:max-w-4xl">
+      <h2 class="text-3xl font-bold tracking-tight text-gray-900">
+        Let's talk about your project
+      </h2>
+      <p class="mt-2 text-lg leading-8 text-gray-600">
+        Expert heating and cooling solutions to homeowners across Long Island.
+      </p>
+      <div class="mt-8">
+        <iframe
+          data-tally-src="https://tally.so/embed/wAd9rN?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+          loading="lazy"
+          width="100%"
+          height="300"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+          title="Book Now"></iframe><script>
+          var d = document,
+            w = "https://tally.so/widgets/embed.js",
+            v = function () {
+              "undefined" != typeof Tally
+                ? Tally.loadEmbeds()
+                : d
+                    .querySelectorAll("iframe[data-tally-src]:not([src])")
+                    .forEach(function (e) {
+                      e.src = e.dataset.tallySrc;
+                    });
+            };
+          if ("undefined" != typeof Tally) v();
+          else if (d.querySelector('script[src="' + w + '"]') == null) {
+            var s = d.createElement("script");
+            (s.src = w), (s.onload = v), (s.onerror = v), d.body.appendChild(s);
+          }
+        </script>
       </div>
+    </div>
+  </div>
 </Layout>

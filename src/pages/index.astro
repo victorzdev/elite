@@ -1,47 +1,39 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 
-import Hero from '../components/dynamic/Hero.astro';
-import MobileHeroServices from '../components/static/MobileHeroServices.astro';
-import SectionContentIntro from '../components/static/SectionContentIntro.astro';
-import SectionContentIncentive from '../components/static/SectionContentIncentive.astro';
+import Hero from "../components/dynamic/Hero.astro";
+import MobileHeroServices from "../components/static/MobileHeroServices.astro";
+import SectionContentIntro from "../components/static/SectionContentIntro.astro";
+import SectionContentIncentive from "../components/static/SectionContentIncentive.astro";
 import SectionContentGuarantee from "../components/static/SectionContentGuarantee.astro";
-import SectionContentServices from '../components/static/SectionContentServices.astro';
-import SectionContentReviews from '../components/static/SectionContentReviews.astro';
-import SectionContentArea from '../components/static/SectionContentArea.astro';
-
+import SectionContentServices from "../components/static/SectionContentServices.astro";
+import SectionContentReviews from "../components/static/SectionContentReviews.astro";
+import SectionContentArea from "../components/static/SectionContentArea.astro";
 ---
-<Layout title="Elite Heating and Cooling: 5-Star HVAC on Long Island">
-	<!-- Hero -->
-	<Hero
-      header={{
-        title: "Air Conditioning and Heating Experts",
-        subtitle: "Long Island",
-        content:
-          "For all your HVAC needs, you're in good hands.",
-      }}
-      image={{
-        src: "/assets/img/hero-elite.jpg",
-        alt: "Ductless Mini-Split Installation",
-      }}
-      primaryCta={{ href: "/contact/", text: "Get a Free Estimate" }}
-      secondaryCta={{ href: "tel:(631) 402-5161", text: "(631) 402-5161" }}
-    />
-	<!-- Mobile Services -->
-	<MobileHeroServices />
-	<!-- Intro -->
-	<SectionContentIntro />
-	<!-- Services -->
-	<SectionContentServices />
-	<!-- Incentives -->
-	<SectionContentIncentive />
-	<!-- Guarantee -->
-	<SectionContentGuarantee />
-	<!-- Reviews -->
-	<SectionContentReviews />
-	<!-- Service -->
-	<SectionContentArea />
 
-	<!-- Recent Projects -->
-	<!-- Form -->
+<Layout
+  title="HVAC Experts on Long Island | Elite Heating and Cooling"
+  description="Trust Elite Heating and Cooling for HVAC solutions on Suffolk and Nassau County. Top-rated service, upfront pricing. Call today for a FREE quote!">
+  <Hero
+    header={{
+      title: "Air Conditioning and Heating Experts",
+      subtitle: "Long Island",
+      content: "For all your HVAC needs, you're in good hands.",
+    }}
+    image={{
+      src: "/assets/img/hero-elite.jpg",
+      alt: "Ductless Mini-Split Installation",
+    }}
+    primaryCta={{ href: "/contact/", text: "Get a Free Estimate" }}
+    secondaryCta={{ href: "tel:(631) 402-5161", text: "(631) 402-5161" }}
+  />
+  <MobileHeroServices />
+  <SectionContentIntro />
+  <SectionContentServices />
+  <SectionContentIncentive />
+  <SectionContentGuarantee />
+  <SectionContentReviews />
+  <SectionContentArea />
+  <!-- Recent Projects -->
+  <!-- Form -->
 </Layout>
