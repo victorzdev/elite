@@ -1,0 +1,52 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Hero from "../../components/dynamic/Hero.astro";
+import SectionContentImage from "../../components/dynamic/SectionContentImage.astro";
+import SectionContentGuarantee from "../../components/static/SectionContentGuarantee.astro";
+import SectionContentReviews from "../../components/static/SectionContentReviews.astro";
+import SectionContentArea from "../../components/static/SectionContentArea.astro";
+---
+
+<Layout
+  title="HVAC Systems for Home Offices | Elite Heating and Cooling"
+  description="Working from home? Get the right heating and air conditioning system for better comfort and productivity. Call for an estimate today!">
+  <div>
+    <Hero
+      header={{
+        title: "Heating and Air Conditioning for Your Home Office",
+        subtitle: "Elite",
+        content:
+          "When you're working from home you need a comfortable space to stay productive all day. Elite Heating and Cooling can help you choose the right HVAC system.",
+      }}
+      image={{
+        src: "/assets/img/hero-home-office.jpg",
+        alt: "Home Office HVAC System",
+      }}
+      primaryCta={{ href: "/contact/", text: "Get a Free Estimate" }}
+      secondaryCta={{ href: "tel:(631) 402-5161", text: "(631) 402-5161" }}
+    />
+    <SectionContentImage
+      header={{
+        title: "Mini Split Systems for Home Offices",
+        subtitle: "",
+        content:
+          "Mini split systems are an ideal solution for your home office. They are quiet, energy efficient, and offer both heating and cooling. The flexibility of mini splits allow you to control the temperature to your liking. With options for wall-mounted, ceiling cassette, and floor-mounted units, you can find the perfect fit for your home office.",
+      }}
+      image={{
+        src: "/assets/img/ductless-mini-split-unit.jpg",
+        alt: "Ductless Mini-Split Unit",
+      }}
+      primaryCta={{ href: "/contact/", text: "Get a Free Estimate" }}
+      secondaryCta={{ href: "tel:(631) 402-5161", text: "(631) 402-5161" }}
+      review={{
+        name: "Mila S.",
+        city: "Islip, NY",
+        content:
+          "I had the team install a mini split system. They were informative and honest about all the brands and options that would fit my budget... Highly recommend elite heating and cooling for their               expertise.",
+      }}
+    />
+    <SectionContentGuarantee />
+    <SectionContentReviews />
+    <SectionContentArea />
+  </div>
+</Layout>

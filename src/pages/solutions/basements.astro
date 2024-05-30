@@ -1,0 +1,52 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Hero from "../../components/dynamic/Hero.astro";
+import SectionContentImage from "../../components/dynamic/SectionContentImage.astro";
+import SectionContentGuarantee from "../../components/static/SectionContentGuarantee.astro";
+import SectionContentReviews from "../../components/static/SectionContentReviews.astro";
+import SectionContentArea from "../../components/static/SectionContentArea.astro";
+---
+
+<Layout
+  title="HVAC Systems for Basements | Elite Heating and Cooling"
+  description="Elevate your basement's comfort with an HVAC system. Year-round comfort, energy efficiency, and targeted heating and cooling without the hassle of ductwork. Contact us today!">
+  <div>
+    <Hero
+      header={{
+        title: "Heating and Air Conditioning for Your Basement",
+        subtitle: "Elite",
+        content:
+          "Transform your basement with precise temperature control. Our expert team will help you find the perfect system to fit your basement's needs. Get in touch for a free consultation.",
+      }}
+      image={{
+        src: "/assets/img/hero-basement.jpg",
+        alt: "Basement HVAC System",
+      }}
+      primaryCta={{ href: "/contact/", text: "Get a Free Estimate" }}
+      secondaryCta={{ href: "tel:(631) 402-5161", text: "(631) 402-5161" }}
+    />
+    <SectionContentImage
+      header={{
+        title: "Mini Split Systems for Basements",
+        subtitle: "",
+        content:
+          "Whether you have a family room or theater room in your basement, mini split systems provide the climate control you need. These systems eliminate the need for ductwork installation, provide quiet operation, and increase your home's energy efficiency.",
+      }}
+      image={{
+        src: "/assets/img/ductless-mini-split-unit.jpg",
+        alt: "Ductless Mini-Split Unit",
+      }}
+      primaryCta={{ href: "/contact/", text: "Get a Free Estimate" }}
+      secondaryCta={{ href: "tel:(631) 402-5161", text: "(631) 402-5161" }}
+      review={{
+        name: "Joanna M.",
+        city: "Syosset, NY",
+        content:
+          "The team at Elite heating and cooling did an excellent job installing my aunts AC System. No hidden fees and the estimate was spot on. Highly recommend. We are very happy!!",
+      }}
+    />
+    <SectionContentGuarantee />
+    <SectionContentReviews />
+    <SectionContentArea />
+  </div>
+</Layout>

@@ -1,0 +1,52 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Hero from "../../components/dynamic/Hero.astro";
+import SectionContentImage from "../../components/dynamic/SectionContentImage.astro";
+import SectionContentGuarantee from "../../components/static/SectionContentGuarantee.astro";
+import SectionContentReviews from "../../components/static/SectionContentReviews.astro";
+import SectionContentArea from "../../components/static/SectionContentArea.astro";
+---
+
+<Layout
+  title="HVAC Systems for Garages | Elite Heating and Cooling"
+  description="Too hot in the summer or too cold in the winter? Make your garage workshop or home gym a more enjoyable space with an HVAC system. Get your personalized estimate today!">
+  <div>
+    <Hero
+      header={{
+        title: "Heating and Air Conditioning for Your Garage",
+        subtitle: "Elite",
+        content:
+          "Create a comfortable workshop, home gym, or hobby room in your garage with our HVAC systems. Contact us today!",
+      }}
+      image={{
+        src: "/assets/img/hero-garage.jpg",
+        alt: "Garage HVAC System",
+      }}
+      primaryCta={{ href: "/contact/", text: "Get a Free Estimate" }}
+      secondaryCta={{ href: "tel:(631) 402-5161", text: "(631) 402-5161" }}
+    />
+    <SectionContentImage
+      header={{
+        title: "Mini Split Systems for Garages",
+        subtitle: "",
+        content:
+          "Mini split systems are an ideal solution for your garage. These systems can heat and cool with ease, and because they require no ductwork, installation is a breeze.",
+      }}
+      image={{
+        src: "/assets/img/ductless-mini-split-unit.jpg",
+        alt: "Ductless Mini-Split Unit",
+      }}
+      primaryCta={{ href: "/contact/", text: "Get a Free Estimate" }}
+      secondaryCta={{ href: "tel:(631) 402-5161", text: "(631) 402-5161" }}
+      review={{
+        name: "Mila S.",
+        city: "Islip, NY",
+        content:
+          "I had the team install a mini split system. They were informative and honest about all the brands and options that would fit my budget... Highly recommend elite heating and cooling for their               expertise.",
+      }}
+    />
+    <SectionContentGuarantee />
+    <SectionContentReviews />
+    <SectionContentArea />
+  </div>
+</Layout>

@@ -1,0 +1,52 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Hero from "../../components/dynamic/Hero.astro";
+import SectionContentImage from "../../components/dynamic/SectionContentImage.astro";
+import SectionContentGuarantee from "../../components/static/SectionContentGuarantee.astro";
+import SectionContentReviews from "../../components/static/SectionContentReviews.astro";
+import SectionContentArea from "../../components/static/SectionContentArea.astro";
+---
+
+<Layout
+  title="HVAC Systems for Sunrooms | Elite Heating and Cooling"
+  description="">
+  <div>
+    <Hero
+      header={{
+        title: "Heating and Air Conditioning for Your Sunroom",
+        subtitle: "Elite",
+        content:
+          "Transform your sunroom into a cozy space with our top-tier heating and cooling systems.",
+      }}
+      image={{
+        src: "/assets/img/hero-sunroom.jpg",
+        alt: "Sunroom HVAC System",
+      }}
+      primaryCta={{ href: "/contact/", text: "Get a Free Estimate" }}
+      secondaryCta={{ href: "tel:(631) 402-5161", text: "(631) 402-5161" }}
+    />
+    <SectionContentImage
+      header={{
+        title: "Mini Split Systems for Sunrooms",
+        subtitle: "",
+        content:
+          "Mini-split systems are a perfect match for sunrooms. They offer precise temperature control, zoning flexibility, and energy efficiency. Choosing Elite Heating and Cooling for your mini split installation means choosing reliability and expertise. We'll ensure your satisfaction every step of the way.",
+      }}
+      image={{
+        src: "/assets/img/ductless-mini-split-unit.jpg",
+        alt: "Ductless Mini-Split Unit",
+      }}
+      primaryCta={{ href: "/contact/", text: "Get a Free Estimate" }}
+      secondaryCta={{ href: "tel:(631) 402-5161", text: "(631) 402-5161" }}
+      review={{
+        name: "Joanna M.",
+        city: "Syosset, NY",
+        content:
+          "The team at Elite heating and cooling did an excellent job installing my aunts AC System. No hidden fees and the estimate was spot on. Highly recommend. We are very happy!!",
+      }}
+    />
+    <SectionContentGuarantee />
+    <SectionContentReviews />
+    <SectionContentArea />
+  </div>
+</Layout>
